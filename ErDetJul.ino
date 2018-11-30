@@ -2,9 +2,9 @@
 
 #define Count 360
 #define Pin 6
-Adafruit_NeoPixel strip = Adafruit_NeoPixel(Count,Pin,NEO_RGB + NEO_KHZ800);
+Adafruit_NeoPixel strip = Adafruit_NeoPixel(Count,Pin,NEO_GRB + NEO_KHZ800);
 
-#define Brightness 20 //Set brightness to 2/10th
+#define Brightness 67 //Set brightness to 2/10th
 #define Full (255/Brightness)
 //Create scrolling red and white candy cane stripes.
 //Try adjusting the width in pixels for various results.
