@@ -1,6 +1,6 @@
 #include <Adafruit_NeoPixel.h>
 
-#define Count 360
+#define Count 590
 #define Pin 6
 Adafruit_NeoPixel strip = Adafruit_NeoPixel(Count,Pin,NEO_GRB + NEO_KHZ800);
 
@@ -108,16 +108,16 @@ void setup() {
 }
 
 void loop() {
-  CandyCane(30,8,50);//30 sets, 8 pixels wide, 50us delay
-  RainbowStripe(5,4,75);//5 cycles, 4 pixels wide, 75us delay
+  CandyCane(30,8,40);//30 sets, 8 pixels wide, 50us delay
+  RainbowStripe(5,4,40);//5 cycles, 4 pixels wide, 75us delay
   RandomWhite(50,200);//50 sets of random grayscale
   RandomColor(50,200);//50 sets of random colors
-  colorWipe(strip.Color(238/Brightness, 66/Brightness, 56/Brightness), 50); // ARed
-  colorWipe(strip.Color(247/Brightness, 203/Brightness, 128/Brightness), 50); // AYellow
-  colorWipe(strip.Color(0, Full, 0), 50); // Green
-  colorWipe(strip.Color(0, Full, Full), 50); // Cyan
-  colorWipe(strip.Color(167/Brightness, 193/Brightness, 210/Brightness), 50); // ABlue
-  colorWipe(strip.Color(122/Brightness, 31/Brightness, 61/Brightness), 50); // AMagenta
+  colorWipe(strip.Color(238/Brightness, 66/Brightness, 56/Brightness), 40); // ARed
+  colorWipe(strip.Color(247/Brightness, 203/Brightness, 128/Brightness), 40); // AYellow
+  colorWipe(strip.Color(0, Full, 0), 40); // Green
+  colorWipe(strip.Color(0, Full, Full), 40); // Cyan
+  colorWipe(strip.Color(167/Brightness, 193/Brightness, 210/Brightness), 40); // ABlue
+  colorWipe(strip.Color(122/Brightness, 31/Brightness, 61/Brightness), 40); // AMagenta
   rainbowCycle(10,2);//10 rainbow cycles
   colorWipe(0,5);//Black
 }
